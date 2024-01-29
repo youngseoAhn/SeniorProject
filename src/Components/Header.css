@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-top: 1px solid #D4D4D4;
+    border-bottom: 1px solid #c4d9ef;
+    margin-top: 3%;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    color: #020867;
+}
+
+.Logo {
+    padding-left: 10%;
+    width: 170px;
+    height: 85px;
+    border: none;
+}
+
+.About {
+    padding-left: 3%;
+}
+
+.Career , .Mental, .Emergency{
+    padding-left: 8%;
+}
