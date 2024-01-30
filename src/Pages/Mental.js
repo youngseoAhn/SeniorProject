@@ -5,7 +5,7 @@ const Mental = () => {
     return (
         <div>
             <Header/>
-            <p>Mental Page</p>
+            <p>Mental Health Matters. This is your Safe Space.</p>
         </div>
     )
 } 
