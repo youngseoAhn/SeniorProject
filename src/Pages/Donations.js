@@ -6,6 +6,8 @@ const Donation = () => {
         <div>
             <Header/>
             <p>Donation Page</p>
+            <p>money</p>
+            <p>clothes</p>
         </div>
     )
 } 
