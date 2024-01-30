@@ -1,13 +1,16 @@
 import React from "react";
 import Header from "../Components/Header";
+import Footer from "../Components/Footer"
 import './Home.css';
 
 const Home = () => {
     return (
         <div>
             <Header/>
-            <p className="Title">Safe Space Homeless Shelter</p>
-            <img src="HomeFirst.jpg" className="firstImage"></img>
+            
+            <img src="HomeFirst.png" className="firstImage"></img>
+
+            <Footer/>
         </div>
     )
 }

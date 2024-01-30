@@ -5,19 +5,25 @@
     background-color: #00989e;
     font-size: 18px;
     color: white;
+    width: 100vw;
 }
 
 .Logo {
     margin-left: 3%;
-    width: 200px;
+    width: 230px;
     height: 65px;
     border: none;
+    cursor: pointer;
+}
+.Empty {
+    margin-left: 23%;
 }
 
-.About {
-    padding-left: 35%;
-}
-
-.Career , .Mental, .Emergency, .Donation{
+.About, .Career, .Mental, .Emergency, .Donation{
     padding-left: 6%;
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+    &:hover {
+        color: #004840;
+    }
 }

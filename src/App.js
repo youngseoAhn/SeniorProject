@@ -4,8 +4,8 @@ import Career from './Pages/Career';
 import ERNumber from './Pages/ERNumber.js';
 import Mental from './Pages/Mental';
 import {Routes, Route} from 'react-router-dom';
-import Donation from './Pages/Donations.js'
-
+import Donation from './Pages/Donations.js';
+import './App.css';
 
 function App() {
   return (
