@@ -1,0 +1,44 @@
+/* Add this to your main CSS file to reset browser defaults */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ERNumber.css - Specific to the ERNumber component */
+.er-container {
+    font-family: 'Bebas Neue', sans-serif;
+}
+.er-content {
+    width: 100%; /* Full width to center the content */
+    max-width: 1200px; /* Adjust max-width as needed for your design */
+    margin: 0 auto; /* This centers the content block */
+    text-align: center;
+}
+
+.er-sections {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Consistent space between sections */
+}
+
+.er-section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px; /* Adjust width as needed */
+    margin: 0 10px; /* Provide some space between sections */
+}
+
+/* Ensure this media query is in your ERNumber.css */
+@media (max-width: 768px) {
+    .er-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .er-section {
+        width: 90%; /* Full width for mobile */
+        margin: 10px 0; /* Stack with space on mobile */
+    }
+}
