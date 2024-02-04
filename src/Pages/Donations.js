@@ -26,7 +26,7 @@ const Donation = () => {
             </p>
 
             <h2 id="time">Volunteering</h2>
-            <p>Use this <a href="/">Signup Form</a> to schedule a volunteering shift. <br></br>
+            <p>Please call us to view availabilities and schedule a volunteering shift. <br></br>
                 We need help with: <br></br>
                 - administrative office duties<br></br>
                 - cooking and serving food<br></br>
