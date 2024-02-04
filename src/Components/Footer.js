@@ -34,7 +34,7 @@ const Footer = () => {
                 <div className="title">Address</div>
                 <div className="content">1900 Commerce St, Tacoma, WA 98402</div>
                 <div className="title">Phone</div>
-                <div className="content">(253)692-4000</div>
+                <div className="content">(253) 692-4000</div>
                 <div className="title">Email</div>
                 <div className="content">Husky@uw.edu</div>
             </div>

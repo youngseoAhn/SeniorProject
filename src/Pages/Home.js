@@ -20,7 +20,7 @@ const Home = () => {
         <div>
             <Header/>
             <img src="HomeFirst.png" className="firstImage"></img>
-            <div className="firstFill">The Safe Space is a homeless shelter open to individuals of all genders and ages,<br/> 
+            <div className="firstFill">Safe Space is a homeless shelter open to individuals of all genders and ages,<br/> 
                 providing a secure and warm haven. Beyond offering temporary accommodation, it supports personalized<br/>
                 future planning, helping each person lay the foundation for rebuilding their lives.</div>
             <div className="secondFill">
@@ -32,7 +32,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="thirdFill">
-                <p className="thirdTitle">Small help still can save people</p>
+                <p className="thirdTitle">Small Gifts are a Big Help</p>
                 <p className="thirdDescription">
                    Our shelter is committed to providing support to those facing hardship, reinforcing the idea that meaningful<br/>
                    help doesn't require grand gestures. Even the smallest acts of kindness can profoundly impact lives,<br/>
