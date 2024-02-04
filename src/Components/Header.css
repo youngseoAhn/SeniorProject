@@ -1,26 +1,29 @@
 .header {
     display: flex;
     align-items: center;
-    background-color: white;
-    border-top: 1px solid #D4D4D4;
-    border-bottom: 1px solid #c4d9ef;
-    margin-top: 3%;
     font-family: 'Bebas Neue', sans-serif;
+    background-color: #00989e;
     font-size: 18px;
-    color: #020867;
+    color: white;
+    width: 100vw;
 }
 
 .Logo {
-    padding-left: 10%;
-    width: 170px;
-    height: 85px;
+    margin-left: 3%;
+    width: 230px;
+    height: 65px;
     border: none;
+    cursor: pointer;
+}
+.Empty {
+    margin-left: 23%;
 }
 
-.About {
-    padding-left: 3%;
-}
-
-.Career , .Mental, .Emergency{
-    padding-left: 8%;
+.About, .Career, .Mental, .Emergency, .Donation{
+    padding-left: 6%;
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+    &:hover {
+        color: #004840;
+    }
 }
