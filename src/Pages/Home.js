@@ -41,6 +41,15 @@ const Home = () => {
                 </p>
                 <p className="donationButton" onClick={navigateToDonation}>Donate</p>
             </div>
+            <div className="fourthFill">
+                <p className="careerExplain">
+                    Are you looking to prepare for your career for the future?<br/>
+                    We are ready to provide all the support you need to prepare for your next step.
+                </p>
+                <p className="careerButton">
+                    Career Page
+                </p>
+            </div>
             <Footer/>
         </div>
     )

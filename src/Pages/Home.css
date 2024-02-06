@@ -53,7 +53,7 @@
     padding-top: 2%;
     width: 20%;
     height: 7.3%;
-    border-radius: 4%;
+    border-radius: 2%;
     color: white;
     cursor: pointer;
     font-family: 'Kanit', sans-serif;
@@ -99,6 +99,38 @@
     cursor: pointer;
     transition: background-color 0.5s ease-in-out;
     
+
+    &:hover {
+        background-color: #FFA500;
+    }
+}
+
+.fourthFill {
+    background-image: url('/public/Career.jpg');
+    height: 350px;
+    width: 100vw;
+}
+
+.careerExplain {
+    padding-top: 7%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.careerButton {
+    background-color: #00989e;
+    border-radius: 3%;
+    color: white;
+    font-size: 16px;
+    padding-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 40px;
+    font-family: 'Kanit', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
 
     &:hover {
         background-color: #FFA500;
