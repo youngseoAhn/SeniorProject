@@ -7,11 +7,14 @@ const About = () => {
     return (
         <div>
             <Header/>
+            <br></br>
             <h1>About Safe Space</h1>
             <section>
 
             <h2 id="mission">Our Mission</h2>
-            <p>example paragraph </p>
+            <p>Safe Space is a homeless shelter open to individuals of all genders and ages,<br/> 
+                providing a secure and warm haven. Beyond offering temporary accommodation, it supports personalized<br/>
+                future planning, helping each person lay the foundation for rebuilding their lives.</p>
 
             <h2 id="items">Our Board Members</h2>
             <p>list of members
