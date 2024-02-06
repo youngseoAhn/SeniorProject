@@ -3,32 +3,34 @@
     font-weight: bolder;
 }
 
-.h1 {
+.whatIsMH {
     font-size: large;
     text-align: center;
     font-weight: bold;
 }
 
-.h2{
+.MHis{
     font-size: medium;
     text-align: center;
     text-decoration: none;
 }
 
-.h3 {
+.MHcond {
     font-weight: bold;
     text-align: center;
+    font-size: large;
 }
-.h4 {
+.MHfactors {
     font-size: medium;
     text-align: center;
 }
 
-.h5 {
-    font-size: medium;
+.MHtopics {
+    font-size: large;
     text-align: center;
+    font-weight: bold;
 }
 
-.div {
+.body {
     text-align: center;
 }

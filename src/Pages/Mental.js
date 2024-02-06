@@ -7,30 +7,35 @@ const Mental = () => {
         <div>
             <Header/>
             <p class='heading'>Mental Health Matters. This is your Safe Space.</p>
-            <h1>
+            <h1 class='whatIsMH'>
                 What is Mental Health?
             </h1>
-            <h2>
+<h2 class='MHis'>
 Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act, 
 and helps determine how we handle stress, relate to others, and make choices.
 <br></br>
 Mental health is important at every stage of life, from childhood and adolescence through adulthood. Over the course of your life, 
 if you experience mental health problems, your thinking, mood, and behavior could be affected.
-            </h2>
-            <h3>
+</h2>
+            <h3 class='MHcond'>
                 Mental Health Condition:
             </h3>
-                <br></br>
+<br></br>
+<body>
         Mental illnesses are disorders, ranging from mild to severe, that affect a person’s thinking, mood, and/or behavior. According to the National Institute of Mental Health, nearly one-in-five adults live with a mental illness.
         <br></br>
-        <h4>Many factors contribute to mental health conditions, including:</h4>
+
+        <h4 class='MHfactors'>Many factors contribute to mental health conditions, including:</h4>
+
         -Biological factors, such as genes or brain chemistry
         <br></br>
         -Life experiences, such as trauma or abuse
         <br></br>
         -Family history of mental health problems
         <br></br>
-        <h5>Some mental health topics include:</h5>
+
+        <h5 class='MHtopics'>Some mental health topics include:</h5>
+
         <br></br>
         -Antisocial personality disorder
         <br></br>
@@ -64,7 +69,7 @@ if you experience mental health problems, your thinking, mood, and behavior coul
         <br></br>
         View SAMHSA's Public Message about Serious Mental Illnesses.
         https://www.samhsa.gov/serious-mental-illness
-
+        </body>
         </div>
     )
 } 
