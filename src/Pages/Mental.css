@@ -4,33 +4,43 @@
 }
 
 .whatIsMH {
-    font-size: large;
+    font-size: larger;
     text-align: center;
     font-weight: bold;
+    text-decoration-color: black;
 }
 
 .MHis{
     font-size: medium;
     text-align: center;
     text-decoration: none;
+    font-weight: lighter;
 }
 
 .MHcond {
-    font-weight: bold;
+    font-weight: lighter;
     text-align: center;
-    font-size: large;
+    font-size: medium;
 }
 .MHfactors {
     font-size: medium;
+    font-weight: lighter;
     text-align: center;
 }
 
 .MHtopics {
     font-size: large;
-    text-align: center;
-    font-weight: bold;
+    text-align:center;
+    font-weight: lighter;
+    font-size: medium;
 }
 
-.body {
+.body1 {
     text-align: center;
+}
+
+.link {
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
 }
