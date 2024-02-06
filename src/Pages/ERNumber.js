@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "../Components/Header";
 import "./ERNumber.css"; // Ensure the path to the CSS file is correct
+import Footer from "../Components/Footer";
+
 
 const emergencyContacts = [
   { name: "Police", number: "911", description: "For immediate police assistance." },
@@ -29,6 +31,7 @@ const ERNumber = () => {
                     ))}
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 };
