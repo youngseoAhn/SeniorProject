@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    display: block;
+    width: 100%; /* Make the link take the full width of the parent li */
+    height: 100%; /* Make the link take the full height of the parent li */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.description {
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+    font-style: italic; /* Emphasize the description with italic style */
+}
