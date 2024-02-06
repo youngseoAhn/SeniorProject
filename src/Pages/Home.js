@@ -50,6 +50,15 @@ const Home = () => {
                     Career Page
                 </p>
             </div>
+            <div className="fifthFill">
+                <p className="mentalHealthTitle">Are you doing okay?<br/>Do you need someone to hear you?</p>
+                <img src="MentalHealthLogo.png" className="thirdImage"></img>
+                <p className="mentalHealthDescription">Your mental health matter to us. We have our resource pages ready for you.<br/> 
+                   If you are current client, you can talk to receptionist to asign with<br/>
+                   mental health professionals. 
+                </p>
+                <p className="mentalHealthButton">Mental Health</p>
+            </div>
             <Footer/>
         </div>
     )

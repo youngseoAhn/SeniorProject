@@ -136,3 +136,46 @@
         background-color: #FFA500;
     }
 }
+
+.fifthFill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.mentalHealthTitle {
+    font-size: 30px;
+    font-family: 'Patua One', serif;
+    margin-top: 5%;
+}
+
+.thirdImage {
+    width: 300px;
+}
+
+.mentalHealthDescription {
+    margin-top: 2%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.mentalHealthButton {
+    background-color: #00989e;
+    border-radius: 3%;
+    color: white;
+    font-size: 16px;
+    padding-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    width: 150px;
+    height: 40px;
+    font-family: 'Kanit', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+
+    &:hover {
+        background-color: #FFA500;
+    }
+}
