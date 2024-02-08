@@ -1,9 +1,10 @@
 // ERNumber.js or wherever your main component is defined
 import React from "react";
 import Header from "../Components/Header";
-import "./ERNumber.css";
 import Footer from "../Components/Footer";
 import ContactCard from '../Components/ContactCard';
+import TableauReport from "../Components/TableauReport";
+import "./ERNumber.css";
 
 const emergencyContacts = [
   // ... existing contacts ...
@@ -75,16 +76,33 @@ const emergencyContacts = [
 ];
 
 const ERNumber = () => {
+  // Corrected variable name to match the mapping below
+  const tableauUrls = [
+    "https://public.tableau.com/views/dataset2_17073842155310/Map?:language=en-US&:display_count=n&:origin=viz_share_link",
+    "https://public.tableau.com/views/dataset3_17073846581140/pitBars?:language=en-US&:display_count=n&:origin=viz_share_link",
+    "https://public.tableau.com/views/dataset1_17073819404780/RaceData?:language=en-US&:display_count=n&:origin=viz_share_link",
+  ];
+
   return (
     <div className="er-container">
       <Header />
       <div className="er-content">
         <h1>Get in touch</h1>
         <p>Emergency? We're here to help. Here's how you can reach us...</p>
+
         <div className="er-sections">
           {emergencyContacts.map((contact, index) => (
             <ContactCard key={index} contact={contact} />
           ))}
+
+
+        {tableauUrls.map((url, index) => (
+            <TableauReport key={index} url={url} />
+        ))}
+
+
+
+
         </div>
       </div>
       <Footer/>
