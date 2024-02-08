@@ -10,6 +10,11 @@ h2 {
     text-decoration: underline;
 }
 
+h3 {
+    text-align: center;
+    margin-bottom: -1%;
+}
+
 section {
     width: 50%;
     margin-left: auto;
@@ -19,6 +24,10 @@ section {
 p {
     text-align: center;
     font-family: 'Barlow Semi Condensed', sans-serif;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 ul {
@@ -26,4 +35,16 @@ ul {
 }
 li {
     list-style-type: none;
+}
+img {
+    size-adjust: 50%;
+}
+table {
+    table-layout: fixed;
+    max-width: 50%;
+}
+td {
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
 }
