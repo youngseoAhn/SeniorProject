@@ -77,11 +77,6 @@ const emergencyContacts = [
 
 const ERNumber = () => {
   // Corrected variable name to match the mapping below
-  const tableauUrls = [
-    "https://public.tableau.com/views/dataset2_17073842155310/Map?:language=en-US&:display_count=n&:origin=viz_share_link",
-    "https://public.tableau.com/views/dataset3_17073846581140/pitBars?:language=en-US&:display_count=n&:origin=viz_share_link",
-    "https://public.tableau.com/views/dataset1_17073819404780/RaceData?:language=en-US&:display_count=n&:origin=viz_share_link",
-  ];
 
   return (
     <div className="er-container">
@@ -89,18 +84,21 @@ const ERNumber = () => {
       <div className="er-content">
         <h1>Get in touch</h1>
         <p>Emergency? We're here to help. Here's how you can reach us...</p>
-
         <div className="er-sections">
+
+
+
           {emergencyContacts.map((contact, index) => (
             <ContactCard key={index} contact={contact} />
           ))}
 
-
-        {tableauUrls.map((url, index) => (
-            <TableauReport key={index} url={url} />
-        ))}
+        <TableauReport url="https://public.tableau.com/views/dataset2_17073842155310/Map?:language=en-US&:display_count=n&:origin=viz_share_link" />
 
 
+        <TableauReport url="https://public.tableau.com/views/dataset3_17073846581140/pitBars?:language=en-US&:display_count=n&:origin=viz_share_link" />
+
+
+        <TableauReport url="https://public.tableau.com/views/dataset1_17073819404780/RaceData?:language=en-US&:display_count=n&:origin=viz_share_link" />
 
 
         </div>
