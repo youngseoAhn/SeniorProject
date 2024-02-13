@@ -1,14 +1,13 @@
 const express = require('express');
-const db = require('./db'); // DB 연결 설정이 있는 파일
+const db = require('./db'); 
 const cors = require('cors');
 
 const app = express();
 app.use(cors());
-app.use(express.json()); // JSON 본문 파싱을 위해
+app.use(express.json()); 
 
-// 클라이언트 정보를 받아서 MySQL에 저장하는 라우트
 app.post('/clients', (req, res) => {
-    const { firstName, lastName, birthday, address, neededservice } = req.body; // 'servicesNeeded'를 'neededservice'로 변경
+    const { firstName, lastName, birthday, address, neededservice } = req.body; 
     const query = 'INSERT INTO clients (firstName, lastName, birthday, address, neededservice) VALUES (?, ?, ?, ?, ?)';
     db.query(query, [firstName, lastName, birthday, address, neededservice], (error, results) => {
         if (error) {
