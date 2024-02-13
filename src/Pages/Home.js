@@ -24,6 +24,10 @@ const Home = () => {
         navigate('/Mental');
     }
 
+    function navigateToClient() {
+        navigate('/ClientEnter');
+    }
+
     return (
         <div>
             <Header/>
@@ -64,6 +68,8 @@ const Home = () => {
                    mental health professionals. 
                 </p>
                 <p className="mentalHealthButton" onClick={navigateToMental}>Mental Health</p>
+
+                <p className="link" onClick={navigateToClient}>Click This</p>
             </div>
             <Footer/>
         </div>
