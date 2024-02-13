@@ -177,3 +177,49 @@
         background-color: #FFA500;
     }
 }
+
+.sixthFill {
+    width: 100vw;
+    display: flex;
+    height: 100%;
+}
+
+.sixthImage {
+    width: 50%;
+}
+
+.sixthDescription {
+    background-color: #00989e;
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+.registerTo {
+    font-family: 'Patua One', serif;
+    margin-top: 20%;
+    font-size: 32px;
+}
+
+.signUpButton {
+    background-color: #89CFF0;
+    border-radius: 3%;
+    color: white;
+    font-size: 16px;
+    padding-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    width: 150px;
+    height: 40px;
+    font-family: 'Kanit', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+
+    &:hover {
+        background-color: orange;
+    }
+}
+
+
+
