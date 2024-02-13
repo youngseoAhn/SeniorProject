@@ -19,7 +19,6 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
     padding-top: 6%;
     padding-bottom: 6%;
-    background-color: white;
 }
 
 .secondFill {
@@ -68,7 +67,6 @@
 .thirdFill {
     width: 100vw;
     text-align: center;
-    background-color: white;
 }
 
 .thirdTitle {

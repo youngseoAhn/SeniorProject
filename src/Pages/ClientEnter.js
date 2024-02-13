@@ -40,6 +40,7 @@ const ClientEnter = () => {
     };
 
     return (
+        
         <form onSubmit={handleSubmit}>
             {errorMessage && <p className="error-message">{errorMessage}</p>}
             <p>first name</p>
