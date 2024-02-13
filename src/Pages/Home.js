@@ -16,6 +16,14 @@ const Home = () => {
         navigate('/About')
     }
 
+    function navigateToCareer() {
+        navigate('/Career');
+    }
+
+    function navigateToMental() {
+        navigate('/Mental');
+    }
+
     return (
         <div>
             <Header/>
@@ -46,9 +54,7 @@ const Home = () => {
                     Are you looking to prepare for your career for the future?<br/>
                     We are ready to provide all the support you need to prepare for your next step.
                 </p>
-                <p className="careerButton">
-                    Career Page
-                </p>
+                <p className="careerButton" onClick={navigateToCareer}>Career Page</p>
             </div>
             <div className="fifthFill">
                 <p className="mentalHealthTitle">Are you doing okay?<br/>Do you need someone to hear you?</p>
@@ -57,7 +63,7 @@ const Home = () => {
                    If you are current client, you can talk to receptionist to asign with<br/>
                    mental health professionals. 
                 </p>
-                <p className="mentalHealthButton">Mental Health</p>
+                <p className="mentalHealthButton" onClick={navigateToMental}>Mental Health</p>
             </div>
             <Footer/>
         </div>
