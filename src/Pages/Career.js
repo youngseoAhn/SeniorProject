@@ -21,13 +21,13 @@ const Career = () => {
                         title="Pierce County Resources"
                         description="Explore job opportunities and find career resources tailored for those seeking employment. Empower yourself with the tools and knowledge needed to secure meaningful work."
                         link="https://www.piercecountywa.gov/4118/Resources"
-                        image="path/to/pierce-county-image.jpg"
+                        image="career2.jpg"
                     />
                     <ResourceCard
                         title="City of Tacoma - Homelessness Services"
                         description="Access company reviews, job listings, and resources to support individuals experiencing homelessness in their job search. Overcome challenges and work towards a brighter future."
                         link="https://www.cityoftacoma.org/government/city_departments/neighborhood_and_community_services/homelessness_services"
-                        image="path/to/tacoma-image.jpg"
+                        image="career3.jpg"
                     />
                     {/* Add more ResourceCard components for additional links and descriptions */}
                 </div>
