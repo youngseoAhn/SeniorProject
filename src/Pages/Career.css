@@ -1,62 +1,70 @@
 .career-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
+    box-sizing: border-box;
     max-width: 1200px;
-    margin: 0 auto;
 }
 
-.career-content {
-    padding: 20px;
+
+.career-container .career-content {
+    padding: 20px; /* Retains existing padding for inner spacing */
+    background-color: #ffffff; /* Light background for contrast and readability */
+    border: 1px solid #e0e0e0; /* Subtle border for definition */
+    border-radius: 10px; /* Softens the edges for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Updated shadow for better depth and focus */
+    margin: 20px auto; /* Centers the content block horizontally, adds vertical spacing */
+    font-family: 'Arial', sans-serif; /* Maintains consistent typography */
+    color: #333; /* Soft color for improved readability */
+    max-width: 1120px; /* Ensures content block is narrower than the container for focus */
+    display: block; /* Ensures the content block is properly formatted */
 }
 
-.title {
+
+
+.career-container .career-title { /* Renamed from .title to .career-title for specificity */
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-.intro-description, .importance-description {
+.career-container .intro-description, .career-container .importance-description {
     font-size: 1.1rem;
     margin-bottom: 20px;
 }
 
-.resource-list {
+.career-container .resource-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
 
-.resource-card {
+.career-container .resource-card {
     background-color: #f8f8f8;
     padding: 20px;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
+    text-align: center; /* Merged the duplicated .resource-card styles */
 }
 
-.resource-card:hover {
+.career-container .resource-card:hover {
     transform: scale(1.05);
 }
 
-.card-description {
-    color: #555;
-    margin-top: 10px;
-}
-.resource-card {
-    background-color: #f8f8f8;
-    padding: 20px;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-    text-align: center;
-}
-
-.resource-card:hover {
-    transform: scale(1.05);
-}
-
-.card-image {
+.career-container .card-image {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
 }
 
-.card-description {
+.career-container .card-description {
     color: #555;
     margin-top: 10px;
+}
+
+
+/* Add this to ensure that the body does not have unexpected padding or margin that could affect layout */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
 }

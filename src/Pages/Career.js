@@ -3,14 +3,25 @@ import Header from "../Components/Header";
 import './Career.css';
 const Career = () => {
     return (
-        <div className="career-container">
+        <div className="career">
             <Header />
-            <div className="career-content">
-                <h1 className="title">Our Mission</h1>
-                <p className="intro-description">
+
+
+            <div>
+                
+            </div>
+
+
+            
+
+
+            <div className="career-container">
+                <div className="career-content">
+                    <h1 className="title">Our Mission</h1>
+                    <p className="intro-description">
                     Accessing career resources is a crucial step towards empowerment and stability, especially for those facing homelessness. Here are valuable resources that can make a significant impact on your journey to a successful career:
-                </p>
-                <div className="resource-list">
+                    </p>
+                    <div className="resource-list">
                     <ResourceCard
                         title="Valeo Vocation"
                         description="Connect with professionals and access resources for skill development. Unlock your potential and build a path towards a fulfilling career."
@@ -30,11 +41,21 @@ const Career = () => {
                         image="career3.jpg"
                     />
                     {/* Add more ResourceCard components for additional links and descriptions */}
-                </div>
-                <p className="importance-description">
+                    </div>
+                    <p className="importance-description">
                     Career resource pages play a vital role in providing a pathway for homeless individuals to regain stability and independence. By offering access to job opportunities, skill development, and support services, these resources empower individuals to break the cycle of homelessness and build a sustainable future. Investing in career development is not just about finding a job; it's about restoring dignity, self-worth, and creating a foundation for lasting positive change.
-                </p>
+                    </p>
+                </div>
             </div>
+
+
+
+
+
+
+
+
+
         </div>
     );
 };
