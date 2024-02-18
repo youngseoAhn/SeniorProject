@@ -5,42 +5,82 @@ import './About.css';
 
 const About = () => {
     return (
-        <div>
-            <Header/>
-            <br></br>
-            <h1>About Safe Space</h1>
-            <section>
+        <div className="about-container">
+            <Header />
+            <div className="about-content">
+                <h1 className="main-heading">About Safe Space</h1>
 
-            <h2 id="mission">Our Mission</h2>
-            <p>Safe Space is a homeless shelter open to individuals of all genders and ages,
-                providing a secure and warm haven. 
-                <br></br>Beyond offering temporary accommodation, it supports personalized
-                future planning, helping each person lay the foundation for rebuilding their lives.</p>
+                <section className="mission-section">
+                    <h2 id="mission">Our Mission</h2>
+                    <p>
+                        Welcome to Safe Space, a compassionate homeless shelter dedicated to providing a secure and warm haven for individuals of all genders and ages. Our mission extends beyond temporary accommodation. We are committed to supporting personalized future planning, assisting each person in laying the foundation for rebuilding their lives.
+                    </p>
+                </section>
 
-            <h2 id="items">Our Board Members</h2>
-            <p><div>
-                    <h3>Board Chair - One Example</h3>
-                    <br></br>
-                    <img src="default_image_board.jpg" className="boardchairimg"></img>
-                </div><div>
-                    <h3>Board Vice-Chair - Two Example</h3>
-                    <br></br>
-                    <img src="default_image_board.jpg" className="boardviceimg"></img>
-                </div><div>
-                    <h3>Board Treasurer - Three Example</h3>
-                    <br></br>
-                    <img src="default_image_board.jpg" className="boardtreasimg"></img>
-                </div><div>
-                    <h3>Board Secretary - Four Example</h3>
-                    <br></br>
-                    <img src="default_image_board.jpg" className="boardsecimg"></img>
-                </div>
-            </p>
-            </section>
-            
-            <Footer/>
+                <section className="services-section">
+                    <h2 id="services">Our Services</h2>
+                    <ul>
+                        <li>Safe and secure temporary accommodation</li>
+                        <li>Personalized future planning assistance</li>
+                        <li>Access to mental health support services</li>
+                        <li>Career development programs</li>
+                        <li>Emergency contacts and resources</li>
+                        <li>Donation programs for community involvement</li>
+                    </ul>
+                </section>
+
+                <section className="board-members-section">
+                    <h2 id="items">Our Board Members</h2>
+                    <div className="board-members">
+                        <div className="board-member">
+                            <h3>Board Chair - William</h3>
+                            <img src="default_image_board.jpg" alt="Board Chair" className="board-member-image" />
+                            <p className="board-member-bio">
+                                As the Board Chair of Safe Space, William is a dedicated leader with a passion for creating positive change in the lives of individuals facing homelessness. William brings years of experience in community service and is committed to ensuring Safe Space remains a beacon of hope for those in need.
+                            </p>
+                        </div>
+                        <div className="board-member">
+                            <h3>Board Vice-Chair - John</h3>
+                            <img src="default_image_board.jpg" alt="Board Vice-Chair" className="board-member-image" />
+                            <p className="board-member-bio">
+                                Serving as the Board Vice-Chair, John is a compassionate advocate for the homeless community. With a background in social work, John strives to contribute innovative ideas and solutions to address the challenges faced by individuals seeking refuge at Safe Space.
+                            </p>
+                        </div>
+                        <div className="board-member">
+                            <h3>Board Treasurer - Mary</h3>
+                            <img src="default_image_board.jpg" alt="Board Treasurer" className="board-member-image" />
+                            <p className="board-member-bio">
+                                In the role of Board Treasurer, Mary is a financial expert committed to ensuring the fiscal responsibility and sustainability of Safe Space. With a strong belief in transparency and accountability, Mary brings financial acumen to support the organization's mission.
+                            </p>
+                        </div>
+                        <div className="board-member">
+                            <h3>Board Secretary - Emily</h3>
+                            <img src="default_image_board.jpg" alt="Board Secretary" className="board-member-image" />
+                            <p className="board-member-bio">
+                                Emily serves as the Board Secretary, overseeing administrative matters with diligence and dedication. With a background in organizational management, Emily contributes organizational skills to ensure the smooth functioning of Safe Space and its mission.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="partnerships-section">
+                    <h2 id="partnerships">Community Partnerships</h2>
+                    <p>
+                        We believe in the strength of community partnerships. Safe Space collaborates with local businesses, organizations, and volunteers to enhance our impact and extend our reach. Together, we strive to create a supportive environment for those in need.
+                    </p>
+                </section>
+
+                <section className="contact-section">
+                    <h2 id="contact">Contact Us</h2>
+                    <p>
+                        If you have any questions, inquiries, or if you'd like to get involved, please feel free to reach out to us. Your support is invaluable in creating a Safe Space for everyone.
+                    </p>
+                    {/* Add your contact form or additional contact details here */}
+                </section>
+            </div>
+            <Footer />
         </div>
-    )
-} 
+    );
+};
 
 export default About;
