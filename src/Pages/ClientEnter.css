@@ -1,0 +1,17 @@
+.enterBox {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 1.5%;
+    width: 450px;
+    height: 500px;
+    text-align: center;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3%;
+}
+
+.signupTitle {
+    font-size: 28px;
+    font-family: 'Patua One', serif;
+}

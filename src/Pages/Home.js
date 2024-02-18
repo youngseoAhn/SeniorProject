@@ -60,6 +60,13 @@ const Home = () => {
                 </p>
                 <p className="careerButton" onClick={navigateToCareer}>Career Page</p>
             </div>
+            <div className="sixthFill">
+                <div className="sixthDescription">
+                    <p className="registerTo">Are you ready to register to shelter?</p>
+                    <p className="signUpButton" onClick={navigateToClient}>Sign up</p>
+                </div>
+                <img src="SignupImage.jpg" className="sixthImage"></img>
+            </div>
             <div className="fifthFill">
                 <p className="mentalHealthTitle">Are you doing okay?<br/>Do you need someone to hear you?</p>
                 <img src="MentalHealthLogo.png" className="thirdImage"></img>
@@ -68,9 +75,6 @@ const Home = () => {
                    mental health professionals. 
                 </p>
                 <p className="mentalHealthButton" onClick={navigateToMental}>Mental Health</p>
-            </div>
-            <div className="sixthFill">
-                 <p className="link" onClick={navigateToClient}>Click This</p>
             </div>
             <Footer/>
         </div>
