@@ -1,36 +1,111 @@
+// ERNumber.js or wherever your main component is defined
 import React from "react";
 import Header from "../Components/Header";
-import "./ERNumber.css"; // Ensure the path to the CSS file is correct
+import Footer from "../Components/Footer";
+import ContactCard from '../Components/ContactCard';
+import TableauReport from "../Components/TableauReport";
+import "./ERNumber.css";
 
 const emergencyContacts = [
-  { name: "Police", number: "911", description: "For immediate police assistance." },
-  { name: "Fire Department", number: "911", description: "In case of fire emergencies." },
-  { name: "Medical Emergency", number: "911", description: "For urgent medical help." },
-  { name: "National Suicide Prevention Lifeline", number: "1-800-273-TALK (8255)", description: "24/7, free and confidential support for people in distress." },
-  { name: "Crisis Text Line", number: "Text HOME to 741741", description: "Free, 24/7 support for those in crisis." },
-  { name: "Veterans Crisis Line", number: "1-800-273-8255 and Press 1", description: "Support for Veterans and their loved ones." }
-  // Add more contacts as necessary
+  // ... existing contacts ...
+  {
+    name: "Police",
+    number: "911",
+    description: "For immediate police assistance.",
+    actionType: 'link',
+    actionValue: 'https://www.cityoftacoma.org/government/city_departments/police'
+  },
+  // ... other existing contacts ...
+  {
+    name: "Fire Department",
+    description: "In case of fire emergencies.",
+    number: "911",
+    actionType: 'link',
+    actionValue: 'https://www.cityoftacoma.org/government/city_departments/fire'
+  },
+  // ... add more new contacts here ...
+  {
+    name: "Medical Emergency",
+    description: "For urgent medical help.",
+    number: "911",
+    actionType: 'link',
+    actionValue: 'https://www.piercecountywa.gov/930/Emergency-Medical-Services-EMS'
+  },
+  {
+    name: "National Suicide Prevention Lifeline",
+    description: "24/7, free and confidential support for people in distress.",
+    number: "1-800-273-TALK (8255)",
+    actionType: 'link',
+    actionValue: 'https://988lifeline.org'
+  },
+  {
+    name: "Crisis Text Line",
+    description: "Free, 24/7 support for those in crisis.",
+    number: "Text HOME to 741741",
+    actionType: 'link',
+    actionValue: 'https://www.crisistextline.org'
+  },
+  {
+    name: "Veterans Crisis Line",
+    description: "Support for Veterans and their loved ones.",
+    number: "1-800-273-8255 and Press 1",
+    actionType: 'link',
+    actionValue: 'https://www.veteranscrisisline.net'
+  },
+  {
+    name: "Poison Control",
+    description: "Immediate assistance with poisoning emergencies.",
+    number: "1-800-222-1222",
+    actionType: 'link',
+    actionValue: 'https://www.poison.org'
+  },
+  {
+    name: "Animal Rescue",
+    description: "Help for injured or endangered animals.",
+    number: "(253) 383-2733",
+    actionType: 'link',
+    actionValue: 'https://www.thehumanesociety.org'
+  },
+  {
+    name: "Roadside Assistance",
+    description: "24/7 help for stranded motorists",
+    number: "1-800-AAA-HELP (1-800-222-4357)",
+    actionType: 'link',
+    actionValue: 'https://wa.aaa.com/membership/terms-and-conditions.html#:~:text=When%20you%20need%20assistance%20from,with%20you%20at%20all%20times.'
+  },
 ];
 
 const ERNumber = () => {
-    return (
-        <div className="er-container">
-            <Header />
-            <div className="er-content">
-                <h1>Get in touch</h1>
-                <p>Emergency? We're here to help. Here's how you can reach us...</p>
-                <div className="er-sections">
-                    {emergencyContacts.map((contact, index) => (
-                        <div key={index} className="er-section">
-                            <h2>{contact.name}</h2>
-                            <p>{contact.description}</p>
-                            <p className="er-number">{contact.number}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
+  // Corrected variable name to match the mapping below
+
+  return (
+    <div className="er-container">
+      <Header />
+      <div className="er-content">
+        <h1>Get in touch</h1>
+        <p>Emergency? We're here to help. Here's how you can reach us...</p>
+        <div className="er-sections">
+
+
+
+          {emergencyContacts.map((contact, index) => (
+            <ContactCard key={index} contact={contact} />
+          ))}
+
+        <TableauReport url="https://public.tableau.com/views/dataset2_17073842155310/Map?:language=en-US&:display_count=n&:origin=viz_share_link" />
+
+
+        <TableauReport url="https://public.tableau.com/views/dataset3_17073846581140/pitBars?:language=en-US&:display_count=n&:origin=viz_share_link" />
+
+
+        <TableauReport url="https://public.tableau.com/views/dataset1_17073819404780/RaceData?:language=en-US&:display_count=n&:origin=viz_share_link" />
+
+
         </div>
-    );
+      </div>
+      <Footer/>
+    </div>
+  );
 };
 
 export default ERNumber;

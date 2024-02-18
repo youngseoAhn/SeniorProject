@@ -5,6 +5,7 @@ import ERNumber from './Pages/ERNumber.js';
 import Mental from './Pages/Mental';
 import {Routes, Route} from 'react-router-dom';
 import Donation from './Pages/Donations.js';
+import ClientEnter from './Pages/ClientEnter.js'
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route path='/ER' element = {<ERNumber/>}/>
       <Route path='/Mental' element = {<Mental/>}/>
       <Route path='/Donation' element = {<Donation/>}/>
+      <Route path='/ClientEnter' element = {<ClientEnter/>}/>
     </Routes>
   );
 }

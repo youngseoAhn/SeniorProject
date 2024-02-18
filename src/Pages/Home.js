@@ -16,6 +16,18 @@ const Home = () => {
         navigate('/About')
     }
 
+    function navigateToCareer() {
+        navigate('/Career');
+    }
+
+    function navigateToMental() {
+        navigate('/Mental');
+    }
+
+    function navigateToClient() {
+        navigate('/ClientEnter');
+    }
+
     return (
         <div>
             <Header/>
@@ -40,6 +52,29 @@ const Home = () => {
                    a positive difference, one individual at a time, by offering practical assistance and emotional support.<br/>
                 </p>
                 <p className="donationButton" onClick={navigateToDonation}>Donate</p>
+            </div>
+            <div className="fourthFill">
+                <p className="careerExplain">
+                    Are you looking to prepare for your career for the future?<br/>
+                    We are ready to provide all the support you need to prepare for your next step.
+                </p>
+                <p className="careerButton" onClick={navigateToCareer}>Career Page</p>
+            </div>
+            <div className="sixthFill">
+                <div className="sixthDescription">
+                    <p className="registerTo">Are you ready to register to shelter?</p>
+                    <p className="signUpButton" onClick={navigateToClient}>Sign up</p>
+                </div>
+                <img src="SignupImage.jpg" className="sixthImage"></img>
+            </div>
+            <div className="fifthFill">
+                <p className="mentalHealthTitle">Are you doing okay?<br/>Do you need someone to hear you?</p>
+                <img src="MentalHealthLogo.png" className="thirdImage"></img>
+                <p className="mentalHealthDescription">Your mental health matter to us. We have our resource pages ready for you.<br/> 
+                   If you are current client, you can talk to receptionist to asign with<br/>
+                   mental health professionals. 
+                </p>
+                <p className="mentalHealthButton" onClick={navigateToMental}>Mental Health</p>
             </div>
             <Footer/>
         </div>

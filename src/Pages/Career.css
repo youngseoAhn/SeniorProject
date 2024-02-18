@@ -1,0 +1,62 @@
+.career-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.career-content {
+    padding: 20px;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.intro-description, .importance-description {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.resource-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.resource-card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.resource-card:hover {
+    transform: scale(1.05);
+}
+
+.card-description {
+    color: #555;
+    margin-top: 10px;
+}
+.resource-card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.resource-card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    color: #555;
+    margin-top: 10px;
+}

@@ -1,0 +1,21 @@
+.contact-card {
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ffffff;
+
+}
+
+.contact-card.hovered, .contact-card:active {
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  transform: translateY(-5px);
+}
+
+.contact-number {
+  color: #000000;
+  font-weight: bold;
+}
