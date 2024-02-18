@@ -4,13 +4,21 @@ h1 {
     margin-bottom: -1%;
 }
 
-h2 {
+/* titles for the page, USE CLASS NAMES TO NOT MESS UP OTHER PAGES */
+#missiontitle,
+#servicestitle,
+#boardtitle,
+#partnershipstitle,
+#contacttitle {
     text-align: center;
-    margin-bottom: 1%;
     text-decoration: none;
+    color: #00989e;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-h3 {
+
+#member-name {
     font-family: 'Merriweather', serif;
     text-align: center;
 }
@@ -93,16 +101,6 @@ max-width: 40%;
 .partnerships-content,
 .contact-content {
     padding: 30px;
-}
-
-#mission,
-#services,
-#board,
-#partnerships,
-#contact {
-    color: #00989e;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
 }
 
 .services-section ul {

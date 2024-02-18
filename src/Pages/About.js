@@ -10,7 +10,7 @@ const About = () => {
             <div className="about-content">
                 <h1 className="main-heading">About Safe Space</h1>
 
-                <h2 id="mission">Our Mission</h2>
+                <h2 id="missiontitle">Our Mission</h2>
                 <section className="mission-section">
                     <div className="mission-content">
                         <p className="sidewords">
@@ -20,7 +20,7 @@ const About = () => {
                     </div>
                 </section>
 
-                <h2 id="services">Our Services</h2>
+                <h2 id="servicestitle">Our Services</h2>
                 <section className="services-section">
                     <div className="services-content">
                     <ul>
@@ -33,32 +33,32 @@ const About = () => {
                     </ul></div>
                 </section>
 
-                <h2 id="board">Our Board Members</h2>
+                <h2 id="boardtitle">Our Board Members</h2>
                 <section className="board-members-section">
                     <div className="board-members">
                         <div className="board-member">
-                            <h3>Board Chair - William</h3>
+                            <h3 id="member-name">Board Chair - William</h3>
                             <img src="default_image_board.jpg" alt="Board Chair" className="board-member-image" />
                             <p className="board-member-bio">
                                 As the Board Chair of Safe Space, William is a dedicated leader with a passion for creating positive change in the lives of individuals facing homelessness. William brings years of experience in community service and is committed to ensuring Safe Space remains a beacon of hope for those in need.
                             </p>
                         </div>
                         <div className="board-member">
-                            <h3>Board Vice-Chair - John</h3>
+                            <h3 id="member-name">Board Vice-Chair - John</h3>
                             <img src="default_image_board.jpg" alt="Board Vice-Chair" className="board-member-image" />
                             <p className="board-member-bio">
                                 Serving as the Board Vice-Chair, John is a compassionate advocate for the homeless community. With a background in social work, John strives to contribute innovative ideas and solutions to address the challenges faced by individuals seeking refuge at Safe Space.
                             </p>
                         </div>
                         <div className="board-member">
-                            <h3>Board Treasurer - Mary</h3>
+                            <h3 id="member-name">Board Treasurer - Mary</h3>
                             <img src="default_image_board.jpg" alt="Board Treasurer" className="board-member-image" />
                             <p className="board-member-bio">
                                 In the role of Board Treasurer, Mary is a financial expert committed to ensuring the fiscal responsibility and sustainability of Safe Space. With a strong belief in transparency and accountability, Mary brings financial acumen to support the organization's mission.
                             </p>
                         </div>
                         <div className="board-member">
-                            <h3>Board Secretary - Emily</h3>
+                            <h3 id="member-name">Board Secretary - Emily</h3>
                             <img src="default_image_board.jpg" alt="Board Secretary" className="board-member-image" />
                             <p className="board-member-bio">
                                 Emily serves as the Board Secretary, overseeing administrative matters with diligence and dedication. With a background in organizational management, Emily contributes organizational skills to ensure the smooth functioning of Safe Space and its mission.
@@ -67,7 +67,7 @@ const About = () => {
                     </div>
                 </section>
 
-                <h2 id="partnerships">Community Partnerships</h2>
+                <h2 id="partnershipstitle">Community Partnerships</h2>
                 <section className="partnerships-section">
                     <div className="partnerships-content">
                     <p>
@@ -75,7 +75,7 @@ const About = () => {
                     </p></div>
                 </section>
 
-                <h2 id="contact">Contact Us</h2>
+                <h2 id="contacttitle">Contact Us</h2>
                 <section className="contact-section">
                     <div className="contact-content">
                     <p>
