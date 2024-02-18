@@ -49,6 +49,7 @@
     background-color: #89CFF0;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 3%;
     padding-top: 2%;
     width: 20%;
     height: 7.3%;
@@ -118,6 +119,7 @@
 
 .careerButton {
     background-color: #00989e;
+    margin-top: 3%;
     border-radius: 3%;
     color: white;
     font-size: 16px;
@@ -159,6 +161,7 @@
 }
 
 .mentalHealthButton {
+    margin-top: 3%;
     background-color: #00989e;
     border-radius: 3%;
     color: white;
@@ -197,11 +200,12 @@
 
 .registerTo {
     font-family: 'Patua One', serif;
-    margin-top: 20%;
+    margin-top: 25%;
     font-size: 32px;
 }
 
 .signUpButton {
+    margin-top: 5%;
     background-color: #89CFF0;
     border-radius: 3%;
     color: white;

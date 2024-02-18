@@ -9,25 +9,35 @@ const ClientEnter = () => {
         lastName: '',
         birthday: '',
         address: '',
-        neededservice: '' 
+        neededservice: ''
     });
 
+    const [photo, setPhoto] = useState(null);
     const [errorMessage, setErrorMessage] = useState(''); 
 
     const handleChange = (e) => {
-        setClient({...client, [e.target.name]: e.target.value});
+        if (e.target.name === "clientPhoto") {
+            setPhoto(e.target.files[0]);
+        } else {
+            setClient({...client, [e.target.name]: e.target.value});
+        }
         setErrorMessage(''); 
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault(); 
+        const formData = new FormData();
+        for (const key in client) {
+            formData.append(key, client[key]);
+        }
+
+        if (photo) {
+            formData.append("clientPhoto", photo)
+        }
         try {
             const response = await fetch('http://localhost:5000/clients', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(client), 
+                body: formData, 
             });
             if (response.ok) {
                 
@@ -58,6 +68,7 @@ const ClientEnter = () => {
                     <p className="signupNames">services needed</p>
                     <input type="text" name="neededservice" value={client.neededservice} onChange={handleChange}></input>
                     <br/>
+                    <input type="file" name="clientPhoto" onChange={handleChange}></input><br/>
                     <button type="submit">Submit</button>
                 </div>
             </form>
