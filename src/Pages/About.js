@@ -10,15 +10,19 @@ const About = () => {
             <div className="about-content">
                 <h1 className="main-heading">About Safe Space</h1>
 
+                <h2 id="mission">Our Mission</h2>
                 <section className="mission-section">
-                    <h2 id="mission">Our Mission</h2>
-                    <p>
-                        Welcome to Safe Space, a compassionate homeless shelter dedicated to providing a secure and warm haven for individuals of all genders and ages. Our mission extends beyond temporary accommodation. We are committed to supporting personalized future planning, assisting each person in laying the foundation for rebuilding their lives.
-                    </p>
+                    <div className="mission-content">
+                        <p className="sidewords">
+                            Safe Space is a compassionate homeless shelter dedicated to providing a secure and warm haven for individuals of all genders and ages. Our mission extends beyond temporary accommodation. We are committed to supporting personalized future planning, assisting each person in laying the foundation for rebuilding their lives.
+                        </p>
+                        <img src="shelter-building.png" alt="SafeSpace Building" className="shelterbuilding"/>
+                    </div>
                 </section>
 
+                <h2 id="services">Our Services</h2>
                 <section className="services-section">
-                    <h2 id="services">Our Services</h2>
+                    <div className="services-content">
                     <ul>
                         <li>Safe and secure temporary accommodation</li>
                         <li>Personalized future planning assistance</li>
@@ -26,11 +30,11 @@ const About = () => {
                         <li>Career development programs</li>
                         <li>Emergency contacts and resources</li>
                         <li>Donation programs for community involvement</li>
-                    </ul>
+                    </ul></div>
                 </section>
 
+                <h2 id="board">Our Board Members</h2>
                 <section className="board-members-section">
-                    <h2 id="items">Our Board Members</h2>
                     <div className="board-members">
                         <div className="board-member">
                             <h3>Board Chair - William</h3>
@@ -63,18 +67,20 @@ const About = () => {
                     </div>
                 </section>
 
+                <h2 id="partnerships">Community Partnerships</h2>
                 <section className="partnerships-section">
-                    <h2 id="partnerships">Community Partnerships</h2>
+                    <div className="partnerships-content">
                     <p>
                         We believe in the strength of community partnerships. Safe Space collaborates with local businesses, organizations, and volunteers to enhance our impact and extend our reach. Together, we strive to create a supportive environment for those in need.
-                    </p>
+                    </p></div>
                 </section>
 
+                <h2 id="contact">Contact Us</h2>
                 <section className="contact-section">
-                    <h2 id="contact">Contact Us</h2>
+                    <div className="contact-content">
                     <p>
                         If you have any questions, inquiries, or if you'd like to get involved, please feel free to reach out to us. Your support is invaluable in creating a Safe Space for everyone.
-                    </p>
+                    </p></div>
                     {/* Add your contact form or additional contact details here */}
                 </section>
             </div>
