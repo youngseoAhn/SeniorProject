@@ -1,4 +1,4 @@
-.heading {
+.mainheading {
     font-size:300%;
     font-weight: bolder;
 }
@@ -8,40 +8,137 @@
     text-align: center;
     font-weight: bold;
     text-decoration-color: black;
+    padding: 30px;
 }
 
 .MHis{
     font-size: medium;
-    text-align: center;
     text-decoration: none;
-    font-weight: lighter;
+    font-weight: light;
+    text-align: center;
+
 }
 
-.MHcond {
-    font-weight: lighter;
-    text-align: center;
+/*.MHcondHeader {
+    font-weight: bold;
     font-size: medium;
-}
+    padding: 30px;
+
+    align-items: center;
+    height: 2vh;
+    text-decoration: none;
+   
+}*/
+
+/*.MHcondexpl {
+    font-weight: lighter;
+    text-align: left;
+
+}*/
+/*
 .MHfactors {
     font-size: medium;
-    font-weight: lighter;
-    text-align: center;
-}
+    font-weight: bold;
+    text-align: left;
 
-.MHtopics {
+}*/
+
+/*.MHFacList {
     font-size: large;
-    text-align:center;
     font-weight: lighter;
     font-size: medium;
+    
 }
-
-.body1 {
-    text-align: center;
-}
-
-.link {
+*/
+/*.MHtopics {
+    font-size: large;
     font-weight: bold;
+    font-size: medium;
+}*/
+
+/*.MHtopicList {
     text-align: center;
-    font-size: larger;
+}*/
+
+.SMI {
+    text-align: center;
+    font-size: large;
+    font-weight: 100;
+    padding: 1%;
+    padding-top: 2%;
 }
 
+.MHlink {
+    font-weight: bold;
+    font-size: larger;
+    text-decoration:wavy;
+    text-decoration: black;
+    padding: 1%;
+
+
+}
+
+.MH-section,
+.whatIsMH,
+.MHis {
+    margin-bottom: 40px;
+    background-color: #abb8c3;
+    border-radius: 15px;
+    width: 100%;
+    margin-left: 0;
+}
+
+.MHphoto {
+    size-adjust: 50%;
+}
+
+.MHcond-section,
+.MHconds,
+.MHcondHeader,
+.MHcondexpl {
+    margin-bottom: 40px;
+    background-color: #abb8c3;
+    border-radius: 15px;
+    width: 100%;
+    margin-left: 0;
+    text-decoration: none;
+    font-size: large;
+}
+
+.MHfactors-section,
+.MHfactors,
+.MHfactorsheader,
+.MHFacList {
+    margin-bottom: 40px;
+    background-color: #abb8c3;
+    border-radius: 15px;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    font-size: large;
+}
+
+.MHtopics-section,
+.MHtopics,
+.MHtopicsheader,
+.MHtopicList {
+    margin-bottom: 40px;
+    background-color: #abb8c3;
+    border-radius: 15px;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    font-size: large;
+}
+
+/*body {
+    background-image: linear-gradient(
+        to bottom,
+        #abb8c3 0%,
+        white 30%,
+        #00989e 70%,
+        #020867 100%
+
+    );
+    height: 120vh;
+}*/
