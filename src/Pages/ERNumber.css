@@ -20,6 +20,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px; /* Consistent space between sections */
+    
 }
 
 .er-section {
@@ -29,6 +30,22 @@ body {
     width: 250px; /* Adjust width as needed */
     margin: 0 10px; /* Provide some space between sections */
 }
+
+
+.intro{
+    font-size: 60px;
+    margin-bottom: 10px; /* Or any space you want between the paragraph and the grid */
+    text-align: center;
+}
+
+
+.intro-midtext {
+    font-size: 60px;
+    margin-bottom: 10px; /* Or any space you want between the paragraph and the grid */
+    text-align: center;
+
+  }
+  
 
 /* Ensure this media query is in your ERNumber.css */
 @media (max-width: 768px) {
@@ -42,5 +59,6 @@ body {
         margin: 10px 0; /* Stack with space on mobile */
     }
 }
+
 
 

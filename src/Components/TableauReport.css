@@ -1,0 +1,11 @@
+/* TableauReport.css */
+.tableauReportContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* In case the visualization is larger than the container */
+    height: 100%; /* Or set to the desired height */
+  }
+  
+
+  

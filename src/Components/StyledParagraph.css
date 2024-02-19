@@ -1,0 +1,9 @@
+/* StyledParagraph.css */
+.styledParagraph {
+    color: #666; /* Lighter grey color */
+    font-size: 60px; /* Example size */
+    line-height: 1.5; /* Spacing between lines for readability */
+    margin: 10px 0; /* Vertical spacing */
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  

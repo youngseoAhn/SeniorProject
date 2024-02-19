@@ -1,0 +1,10 @@
+/* StyledHeader.css */
+.styledHeader {
+    text-align: center;
+    color: #333; /* Dark grey color */
+    font-size: 24px; /* Example size */
+    margin-bottom: 20px; /* Space below the header */
+    font-family: 'Bebas Neue', sans-serif;
+
+  }
+  

@@ -4,6 +4,8 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import ContactCard from '../Components/ContactCard';
 import TableauReport from "../Components/TableauReport";
+//import StyledHeader from "../Components/StyledHeader";
+//import StyledParagraph from "../Components/StyledParagraph";
 import "./ERNumber.css";
 
 const emergencyContacts = [
@@ -76,32 +78,24 @@ const emergencyContacts = [
 ];
 
 const ERNumber = () => {
-  // Corrected variable name to match the mapping below
-
   return (
     <div className="er-container">
       <Header />
       <div className="er-content">
-        <h1>Get in touch</h1>
-        <p>Emergency? We're here to help. Here's how you can reach us...</p>
+        <div className="intro">
+        <p>What Is the State of Homelessness ?</p>
+        <TableauReport url="https://public.tableau.com/views/dataset2_17073842155310/Map?:language=en-US&:display_count=n&:origin=viz_share_link"/>
+        </div>
+        <div className="intro-midtext">
+          <p>Emergency? We're here to help. Here's how you can reach us...</p>
+        </div>
         <div className="er-sections">
-
-
-
           {emergencyContacts.map((contact, index) => (
             <ContactCard key={index} contact={contact} />
           ))}
-
-        <TableauReport url="https://public.tableau.com/views/dataset2_17073842155310/Map?:language=en-US&:display_count=n&:origin=viz_share_link" />
-
-
-        <TableauReport url="https://public.tableau.com/views/dataset3_17073846581140/pitBars?:language=en-US&:display_count=n&:origin=viz_share_link" />
-
-
-        <TableauReport url="https://public.tableau.com/views/dataset1_17073819404780/RaceData?:language=en-US&:display_count=n&:origin=viz_share_link" />
-
-
         </div>
+        <TableauReport url="https://public.tableau.com/views/dataset3_17073846581140/pitBars?:language=en-US&:display_count=n&:origin=viz_share_link" />
+        <TableauReport url="https://public.tableau.com/views/dataset1_17073819404780/RaceData?:language=en-US&:display_count=n&:origin=viz_share_link" />
       </div>
       <Footer/>
     </div>
