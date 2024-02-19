@@ -10,10 +10,12 @@
     }
 }
 
-h1 {
-    font-family: 'Merriweather', serif;
-    text-align: center;
-    margin-bottom: -1%;
+/* do not overwrite, will affect the header */
+p {
+    text-align: right;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    width: 100%;
+    margin: auto;
 }
 
 /* titles for the page, USE CLASS NAMES TO NOT MESS UP OTHER PAGES */
@@ -28,6 +30,7 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     animation: fade-up 1.5s;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 
@@ -36,45 +39,27 @@ h1 {
     text-align: center;
 }
 
-p {
+/* p for this specific page */
+.aboutwrittencontent{
     text-align: right;
     font-family: 'Barlow Semi Condensed', sans-serif;
     width: 100%;
     margin: auto;
 }
 
-ul {
-    margin-top: 0;
-}
-
-li {
-    list-style-type: none;
-}
-
-img {
-    size-adjust: 50%;
-}
-
-table {
-    table-layout: fixed;
-    max-width: 50%;
-}
-
-td {
-    border: 2px solid black;
-    text-align: center;
-    padding: 20px;
-}
-
 .about-container {
     background-color: #abb8c3;
 }
 
-.main-heading {
+.about-heading {
     text-align: center;
     font-size: 2.8rem;
     color: #333;
-    margin-bottom: 30px;
+    margin-bottom: 1%;
+
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    animation: fade-up .75s;
 }
 
 .mission-section,
@@ -83,7 +68,7 @@ td {
 .partnerships-section,
 .contact-section {
     margin-bottom: 40px;
-    background-color: #abb8c3;
+    background-color: #ffffff;
     border-radius: 15px;
     width: 90%;
     margin-left: auto;
@@ -93,7 +78,7 @@ td {
 .mission-content {
     display: flex;
     align-items: center;
-    font-size: 25px;
+    font-size: 23px;
     padding: 30px;
 }
 .sidewords {
@@ -105,17 +90,16 @@ td {
 max-width: 40%;
 }
 
+.services-content {
+    font-size: 20px;
+}
+
 .mission-content,
 .services-content,
 .board-members,
 .partnerships-content,
 .contact-content {
     padding: 30px;
-}
-
-.services-section ul {
-    list-style-type: disc;
-    margin-left: 20px;
 }
 
 .board-members {
@@ -135,6 +119,7 @@ max-width: 40%;
 }
 .board-member:hover {
     transform: scale(1.05);
+    background-color: #bedde7;
 }
 
 .board-member-image {
@@ -157,14 +142,14 @@ max-width: 40%;
     }
 }
 .about-container {
-    background: linear-gradient(135deg, #bedde7, #abb8c3); /* Gradient background with two shades */
+    background: linear-gradient(135deg, #dbebf0, #abb8c3); /* Gradient background with two shades */
 }
 
 .about-content {
     max-width:100%;
     margin: 0 auto;
     padding: 10px;
-    background: linear-gradient(135deg, #bedde7, #abb8c3); /* Matching gradient background */
+    background: linear-gradient(135deg, #dbebf0, #abb8c3); /* Matching gradient background */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     overflow: hidden;

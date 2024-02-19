@@ -8,7 +8,7 @@ const About = () => {
         <div className="about-container">
             <Header />
             <div className="about-content">
-                <h1 className="main-heading">About Safe Space</h1>
+                <h1 className="about-heading">About Safe Space</h1>
 
                 <h2 id="missiontitle">Our Mission</h2>
                 <section className="mission-section">
@@ -23,14 +23,14 @@ const About = () => {
                 <h2 id="servicestitle">Our Services</h2>
                 <section className="services-section">
                     <div className="services-content">
-                    <ul>
-                        <li>Safe and secure temporary accommodation</li>
-                        <li>Personalized future planning assistance</li>
-                        <li>Access to mental health support services</li>
-                        <li>Career development programs</li>
-                        <li>Emergency contacts and resources</li>
-                        <li>Donation programs for community involvement</li>
-                    </ul></div>
+                        <p className="aboutwrittencontent">
+                        Safe and secure temporary accommodation <br></br>
+                        Personalized future planning assistance <br></br>
+                        Access to mental health support services <br></br>
+                        Career development programs <br></br>
+                        Emergency contacts and resources <br></br>
+                        Donation programs for community involvement <br></br>
+                        </p></div>
                 </section>
 
                 <h2 id="boardtitle">Our Board Members</h2>
@@ -70,7 +70,7 @@ const About = () => {
                 <h2 id="partnershipstitle">Community Partnerships</h2>
                 <section className="partnerships-section">
                     <div className="partnerships-content">
-                    <p>
+                    <p className="aboutwrittencontent">
                         We believe in the strength of community partnerships. Safe Space collaborates with local businesses, organizations, and volunteers to enhance our impact and extend our reach. Together, we strive to create a supportive environment for those in need.
                     </p></div>
                 </section>
@@ -78,7 +78,7 @@ const About = () => {
                 <h2 id="contacttitle">Contact Us</h2>
                 <section className="contact-section">
                     <div className="contact-content">
-                    <p>
+                    <p className="aboutwrittencontent">
                         If you have any questions, inquiries, or if you'd like to get involved, please feel free to reach out to us. Your support is invaluable in creating a Safe Space for everyone.
                     </p></div>
                     {/* Add your contact form or additional contact details here */}
