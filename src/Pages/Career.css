@@ -4,6 +4,7 @@
     margin-right: auto ;
     box-sizing: border-box;
     max-width: 1200px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 
@@ -18,8 +19,9 @@
     color: #333; /* Soft color for improved readability */
     max-width: 1120px; /* Ensures content block is narrower than the container for focus */
     display: block; /* Ensures the content block is properly formatted */
-}
+    font-family: 'Barlow Semi Condensed', sans-serif;
 
+}
 
 
 .career-container .career-title { /* Renamed from .title to .career-title for specificity */
@@ -30,6 +32,7 @@
 .career-container .intro-description, .career-container .importance-description {
     font-size: 1.1rem;
     margin-bottom: 20px;
+    
 }
 
 .career-container .resource-list {
@@ -68,3 +71,72 @@ body {
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
+.heading-title h1 {
+    font-size: 2.5rem; /* Adjust size as needed */
+    color: #000000; /* Deep, professional blue */
+    text-align: center; /* Center the heading */
+    margin: 40px 0; /* Add some space around */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Aesthetic, readable font */
+    text-shadow: 1px 1px 2px #6E9BCF; /* Subtle shadow for depth */
+    padding: 20px; /* Padding around the text */
+    background-color: #EAF2F8; /* Light background for contrast */
+    border-radius: 10px; /* Soft rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Gentle box shadow for pop effect */
+    max-width: 80%; /* Limiting max width for better readability */
+    margin-left: auto; /* Centering the div */
+    margin-right: auto; /* Centering the div */
+}
+
+
+.firstDescriptionHeader {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.firstDescriptionHeader h1 {
+    font-size: 4rem; /* Adjust size as needed */
+    color: #fff; /* Set color to white */
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin-top: 50px; /* Adjust as needed */
+
+}
+
+.secDescription {
+    background-color: #6C8F9F;
+    flex: 1;
+    text-align: center;
+}
+.secFill {
+    width: 100vw;
+    display: flex;
+    height: 100%;
+}
+.description11 {
+    margin-top: 130px; /* Adjust as needed */
+    font-size: 2.0rem; /* Adjust size as needed */
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.careerFirstImage {
+    flex: 1;
+    width: 50%;
+}
+.rectangle-box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+    background-color: #6C8F9F;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 auto; /* Set left and right margins to auto */
+}
+
+.rectangle-box1 p {
+    margin: 0;
+    color: white;
+    font-size: 60px;
+}
+
