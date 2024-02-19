@@ -9,69 +9,136 @@
     font-weight: bold;
     text-decoration-color: black;
     padding: 30px;
-    background-color: white;
-    position:relative;
-
 }
 
 .MHis{
     font-size: medium;
     text-decoration: none;
-    font-weight: lighter;
+    font-weight: light;
+    text-align: center;
 
 }
 
-.MHcondHeader {
+/*.MHcondHeader {
     font-weight: bold;
     font-size: medium;
     padding: 30px;
-    background-color: white;
+
     align-items: center;
     height: 2vh;
     text-decoration: none;
    
-}
+}*/
 
-.MHcondexpl {
+/*.MHcondexpl {
     font-weight: lighter;
     text-align: left;
 
-}
-
+}*/
+/*
 .MHfactors {
     font-size: medium;
     font-weight: bold;
     text-align: left;
 
-}
+}*/
 
-.MHFacList {
+/*.MHFacList {
     font-size: large;
     font-weight: lighter;
     font-size: medium;
     
 }
-
-.MHtopics {
+*/
+/*.MHtopics {
     font-size: large;
     font-weight: bold;
     font-size: medium;
-}
+}*/
 
-.MHtopicList {
+/*.MHtopicList {
     text-align: center;
-}
+}*/
 
 .SMI {
     text-align: center;
-    font-size: larger;
+    font-size: large;
     font-weight: 100;
-    background-color: white;
+    padding: 1%;
+    padding-top: 2%;
 }
 
-.link {
+.MHlink {
     font-weight: bold;
     font-size: larger;
     text-decoration:wavy;
     text-decoration: black;
+    padding: 1%;
+
+
 }
+
+.MH-section,
+.whatIsMH,
+.MHis {
+    margin-bottom: 40px;
+    background-color: #abb8c3;
+    border-radius: 15px;
+    width: 100%;
+    margin-left: 0;
+}
+
+.MHphoto {
+    size-adjust: 50%;
+}
+
+.MHcond-section,
+.MHconds,
+.MHcondHeader,
+.MHcondexpl {
+    margin-bottom: 40px;
+    background-color: #abb8c3;
+    border-radius: 15px;
+    width: 100%;
+    margin-left: 0;
+    text-decoration: none;
+    font-size: large;
+}
+
+.MHfactors-section,
+.MHfactors,
+.MHfactorsheader,
+.MHFacList {
+    margin-bottom: 40px;
+    background-color: #abb8c3;
+    border-radius: 15px;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    font-size: large;
+}
+
+.MHtopics-section,
+.MHtopics,
+.MHtopicsheader,
+.MHtopicList {
+    margin-bottom: 40px;
+    background-color: #abb8c3;
+    border-radius: 15px;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    font-size: large;
+}
+
+/*body {
+    background-image: linear-gradient(
+        to bottom,
+        #abb8c3 0%,
+        white 30%,
+        #00989e 70%,
+        #020867 100%
+
+    );
+    height: 120vh;
+}*/
