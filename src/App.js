@@ -7,7 +7,6 @@ import {Routes, Route} from 'react-router-dom';
 import Donation from './Pages/Donations.js';
 import ClientEnter from './Pages/ClientEnter.js'
 import Submitted from './Pages/Submitted.js'
-import UserEntered from './Pages/UserEntered.js';
 import './App.css';
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
       <Route path='/Donation' element = {<Donation/>}/>
       <Route path='/ClientEnter' element = {<ClientEnter/>}/>
       <Route path='/Submitted' element = {<Submitted/>}/>
-      <Route path='/UserEntered' element = {<UserEntered/>}/>
     </Routes>
   );
 }

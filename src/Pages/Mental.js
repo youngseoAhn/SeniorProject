@@ -9,7 +9,6 @@ const Mental = () => {
             <Header/>
             <p class='mainheading'> <br></br>Mental Health Matters. <br></br>This is your Safe Space.</p>
 
-
         <section className="MHsection">
              <div className="MHDiv">
                 <h1 class='MHHeader1'>What is Mental Health?</h1>
