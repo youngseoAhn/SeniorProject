@@ -10,11 +10,16 @@ app.use(cors());
 app.use(express.json()); 
 
 app.post('/clients', upload.single("clientPhoto"), (req, res) => {
-    const { firstName, lastName, birthday, address, neededservice } = req.body;
+    const { firstName, lastName, birthday, address, careerDevelopment, mentalHealth, substanceIssues, generalHealth } = req.body;
     const clientPhoto = req.file ? req.file.buffer : null;
 
-    const query = 'INSERT INTO clients (firstName, lastName, birthday, address, neededservice, photo) VALUES (?, ?, ?, ?, ?, ?)';
-    db.query(query, [firstName, lastName, birthday, address, neededservice, clientPhoto], (error, results) => {
+    const careerDev = careerDevelopment === 'true';
+    const mentalHlth = mentalHealth === 'true';
+    const substanceIss = substanceIssues === 'true';
+    const generalHlth = generalHealth === 'true';
+
+    const query = 'INSERT INTO clients (firstName, lastName, birthday, address, careerDevelopment, mentalHealth, substanceIssues, generalHealth, photo) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)';
+    db.query(query, [firstName, lastName, birthday, address, careerDev, mentalHlth, substanceIss, generalHlth, clientPhoto], (error, results) => {
         if (error) {
             console.error("Error saving data:", error);
             res.status(500).send("Error saving data");

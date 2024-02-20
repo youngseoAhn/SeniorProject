@@ -2,16 +2,53 @@
     margin-top: 5%;
     margin-bottom: 5%;
     padding-top: 1.5%;
-    width: 450px;
-    height: 500px;
+    width: 600px;
+    height: 900px;
     text-align: center;
-    background-color: white;
+    background-color: #ABB8C3;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 3%;
+    border-radius: 1%;
+    border: 6px solid white;
 }
 
 .signupTitle {
     font-size: 28px;
-    font-family: 'Patua One', serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin-bottom: 5%;
+}
+
+.Names {
+    display: flex;
+    margin-bottom: 4%;
+}
+
+.signupNames {
+    margin-right: 6%;
+}
+
+.nameBox {
+    margin-right: 15%;
+    width: 600px;
+    height: 25px;
+    border-radius: 3%;
+    border: 2px solid gray;
+}
+
+.BirthdaysContainer {
+    display: flex;
+}
+
+.signupBirthday {
+    margin-right: 6%;
+    margin-bottom: 4%;
+}
+
+.photoBox {
+    padding-right: 42%;
+    width: 200px;
+}
+
+.signupServices {
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
