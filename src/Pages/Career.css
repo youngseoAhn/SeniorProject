@@ -122,21 +122,46 @@ body {
     flex: 1;
     width: 50%;
 }
-.rectangle-box1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100px;
-    background-color: #6C8F9F;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 0 auto; /* Set left and right margins to auto */
-}
+/* Existing styles */
+/* (Keep your existing CSS as it is and add the animations below) */
 
-.rectangle-box1 p {
-    margin: 0;
-    color: white;
-    font-size: 60px;
-}
-
+/* Animations */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Apply animation to the entire .secFill container */
+  .secFill {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  /* Apply fadeIn animation to text elements with a delay to ensure a smooth, sequential appearance */
+  .secDescription .firstDescriptionHeader, .secDescription .description11 {
+    opacity: 0; /* Start elements as invisible */
+    animation: fadeIn 1.5s ease-out 0.5s forwards;
+  }
+  
+  /* Specific animation for the image to slide in from the right */
+  .careerFirstImage {
+    opacity: 0; /* Start the image as invisible */
+    animation: slideInRight 1.5s ease-out 1s forwards;
+  }
+  

@@ -1,0 +1,116 @@
+hr {
+    width: 50%; /* Adjust this value to control how much of the page the <hr> covers */
+    margin: 0 auto; /* This centers the <hr> element horizontally */
+    border-top: 1px  /* Adjust color and thickness as needed */
+  }
+
+  .AfterHomlessnessInfoHeader h2 {
+    text-align: center; /* This will center your header */
+    font-family: Arial, sans-serif; /* This applies the Arial font */
+    margin-top: 20px; /* Adjust as needed for spacing */
+    margin-bottom: 20px; /* Adjust as needed for spacing */
+    color: black;
+    }
+
+  .AfterHomlessnessInfoHeader p {
+    text-align: center; /* This will center your header */
+    font-family: Arial, sans-serif; /* This applies the Arial font */
+    margin-top: 20px; /* Adjust as needed for spacing */
+    margin-bottom: 20px; /* Adjust as needed for spacing */
+    color: black;
+    font-size: 20px;
+  }
+
+
+.rectangle-box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+    background-color: #6C8F9F;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 auto; /* Set left and right margins to auto */
+}
+
+.rectangle-box1 p {
+    margin: 0;
+    color: white;
+    font-size: 60px;
+}
+.rectangle-box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100px;
+  background-color: #6C8F9F;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 auto; /* Set left and right margins to auto */
+}
+
+.rectangle-box2 p {
+  margin: 0;
+  color: white;
+  font-size: 25px;
+}
+.AfterHomelessnessInfo {
+    max-width: 800px; /* Adjust this value to match the width in the picture */
+    margin: 0 auto; /* This centers the paragraph */
+    font-family: Arial, sans-serif; /* Assuming the font is Arial, you can change this to match the font in the picture */
+    font-size: 16px; /* Adjust this value to match the font size in the picture */
+    line-height: 1.6; /* This sets the line height to be 1.6 times the font size, adjust as needed */
+    color: #333; /* This is a typical text color, change as needed */
+    padding: 20px; /* Adjust padding to match the picture */
+    text-align: justify; /* This will justify your text similar to the image */
+    border-left: 3px solid #0056b3; /* This creates the blue line on the left, change color as needed */
+    background-color: #f0f0f0; /* This sets the background color, change as needed */
+  }
+  
+  /* Style for the superscript footnote reference */
+  .AfterHomelessnessInfo sup {
+    vertical-align: super;
+    font-size: smaller;
+  }
+  .tableauReport-container {
+    width: 50%; /* Adjust the width to your preference for the size of the Tableau report */
+    height: auto; /* This will maintain the aspect ratio of the report */
+    margin: 20px auto; /* This centers the div container and adds some space above and below */
+    padding: 10px; /* Optional: adds some padding inside the container */
+    border: 1px solid #ccc; /* Optional: adds a border around the container */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a shadow for a lifted effect */
+    background-color: #fff; /* Optional: sets a background color */
+  }
+  
+  /* Additional styles for the TableauReport iframe if needed */
+  .tableauReport-container iframe {
+    width: 100%; /* Sets the width of the iframe to fill the container */
+    height: 500px; /* Adjust the height as needed */
+    border: none; /* Removes any default border */
+  }
+  /* Keyframe animation for fading in and scaling up */
+@keyframes fadeInScaleUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation to the specified elements */
+.rectangle-box1, .rectangle-box2, .AfterHomelessnessInfo {
+  animation: fadeInScaleUp 1s ease forwards;
+}
+
+/* Ensure elements are initially set to be invisible for the animation effect */
+.rectangle-box1, .rectangle-box2, .AfterHomelessnessInfo {
+  opacity: 0;
+}
+
+
+

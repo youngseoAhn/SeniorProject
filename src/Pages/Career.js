@@ -1,7 +1,10 @@
 import React from 'react';
 import Header from "../Components/Header";
 import './Career.css'; // Make sure this path is correct
+import './Career1.css';
 import Footer from '../Components/Footer';
+import TableauReport from "../Components/TableauReport";
+
 
 const Career = () => {
     return (
@@ -21,18 +24,52 @@ const Career = () => {
                     and support as you navigate through difficult times.</p>
                 </div>
                 <img src="career4.png" className="careerFirstImage"></img>
-
         </div>
         <br></br>
         
         <div className="rectangle-box1">
                 <p>Homelessness in 2022</p>
         </div>
+        <br></br>
 
-        <p className='AfterHomelessnessInfo'>
-        According to the January 2022 PIT Count, 582,462 people were experiencing homelessness across America. This amounts to roughly 18 out of every 10,000 people1.
+        
+        <p class='AfterHomelessnessInfo'>
+        According to the January 2022 PIT Count, 582,462 people were experiencing homelessness across America. This amounts to roughly 18 out of every 10,000 people<sup>1</sup>.
         The vast majority (72 percent) were individual adults, but a notable share (28 percent) were people living in families with children.
         </p>
+
+        <br></br>
+        <hr></hr>
+
+        <div className='AfterHomlessnessInfoHeader'>
+        <h2>Who is Experiencing Homelessness in 2022: Special Populations</h2>
+            <p>For reasons rooted in practice and policy, the homeless services world focuses on specific special populations. Of people experiencing homeless:</p>
+            <br></br>
+            <div className="rectangle-box2">
+                <p>22 percent are chronically homeless individuals (or people with disabilities who have experienced long-term or repeated incidents of homelessness)</p>
+            </div>
+            <br></br>
+            <div className="rectangle-box2">
+                <p>6 percent are veterans (distinguished due to their service to the country)</p>
+            </div>
+            <br></br>
+            <div className="rectangle-box2">
+                <p>5 percent are unaccompanied youth under 25 (considered vulnerable due to their age)</p>
+            </div>
+            <div className="tableauReport-container">
+                <TableauReport url="https://public.tableau.com/views/Dataset4_17084131373160/pitBars?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link"/>
+            </div>
+        </div>
+
+        <br></br>
+        <hr></hr>
+
+        <div className=''>
+
+
+
+            
+        </div>
 
             <div className="career-container"> {/* Changed from "career" to "career-container" to match CSS */}
 
