@@ -1,0 +1,81 @@
+/* General Styles */
+.donation-page h1, .donation-page h2, .donation-page p, .donation-page a, .animated-section h2, .testimonial p, .impact-stories h2, .gallery h2, .cta h2, .cta p {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Animation for elements to fade in and scale up */
+@keyframes fadeInScaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animated sections including impact stories, gallery, and CTA */
+.animated-section {
+  animation: fadeInScaleUp 1s ease forwards;
+  opacity: 0; /* Start elements as invisible for the animation */
+}
+
+/* Enhanced styling for the donation page sections */
+.donation-page section, .animated-section, .testimonial, .impact-stories, .gallery, .cta {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light grey background for separation */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: auto; /* Auto width to respect container sizes */
+  max-width: 800px; /* Max width to maintain readability */
+}
+
+/* Styling for images in the gallery and impact stories */
+.gallery img, .impact-stories .story img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 10px 0; /* Add space around images */
+}
+
+/* Call to Action Button Styling */
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the button horizontally */
+  justify-content: center; /* Centers content vertically, if needed */
+  text-align: center; /* Ensures text inside the cta section is centered */
+  /* Other styles remain the same */
+}
+
+.cta button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 20px; /* Adds some space above the button, adjust as needed */
+}
+
+/* Ensure the button text is centered, useful if there are multiple lines of text */
+.cta button {
+  text-align: center;
+}
+
+.cta button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .donation-page section, .animated-section, .testimonial, .impact-stories, .gallery, .cta {
+    width: 90%; /* Slightly wider on smaller screens for readability */
+  }
+}
