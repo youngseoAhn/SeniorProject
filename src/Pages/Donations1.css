@@ -32,7 +32,17 @@
   border-radius: 5px;
   width: auto; /* Auto width to respect container sizes */
   max-width: 800px; /* Max width to maintain readability */
+  color: black;
+  font-family: 'Bebas Neue', sans-serif;
 }
+
+/* New CSS to center links */
+.impact-stories a {
+  display: block; /* Makes the link occupy the entire line */
+  text-align: center; /* Centers the text of the link */
+  margin: 10px 0; /* Optional: adds some space above and below the link */
+}
+
 
 /* Styling for images in the gallery and impact stories */
 .gallery img, .impact-stories .story img {
