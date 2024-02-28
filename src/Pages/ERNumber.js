@@ -87,7 +87,8 @@ const ERNumber = () => {
         <TableauReport url="https://public.tableau.com/views/dataset2_17073842155310/Map?:language=en-US&:display_count=n&:origin=viz_share_link"/>
         </div>
         <div className="intro-midtext">
-          <p>Emergency? We're here to help. Here's how you can reach us...</p>
+          <p>For Immediate Emergencies, call 911. <br></br></p>
+          <p class="smaller">Otherwise, please call the number most relevant to your situation.</p>
         </div>
         <div className="er-sections">
           {emergencyContacts.map((contact, index) => (
