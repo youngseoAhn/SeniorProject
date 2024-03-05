@@ -29,6 +29,24 @@ app.post('/clients', upload.single("clientPhoto"), (req, res) => {
     });
 });
 
+app.post('/login', (req, res) => {
+    const { username, password } = req.body;
+
+    const query = 'SELECT * FROM login WHERE username = ? AND password = ?';
+    db.query(query, [username, password], (error, results) => {
+        if (error) {
+            console.error("Error querying login data:", error);
+            res.status(500).send("Error querying login data");
+        } else {
+            if (results.length > 0) {
+                res.status(200).json({ message: "Login successful" });
+            } else {
+                res.status(401).json({ message: "Invalid username or password" });
+            }
+        }
+    });
+});
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`);

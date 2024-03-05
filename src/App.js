@@ -7,6 +7,8 @@ import {Routes, Route} from 'react-router-dom';
 import Donation from './Pages/Donations.js';
 import ClientEnter from './Pages/ClientEnter.js'
 import Submitted from './Pages/Submitted.js'
+import AdminLogin from './Pages/AdminLogin.js';
+import Admin from './Pages/Admin.js';
 import './App.css';
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
       <Route path='/Donation' element = {<Donation/>}/>
       <Route path='/ClientEnter' element = {<ClientEnter/>}/>
       <Route path='/Submitted' element = {<Submitted/>}/>
+      <Route path='/AdminLogin' element = {<AdminLogin/>}/>
+      <Route path='/Admin' element = {<Admin/>}/>
     </Routes>
   );
 }

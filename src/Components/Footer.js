@@ -27,6 +27,10 @@ const Footer = () => {
         navigate('/Donation');
     }
 
+    function navigateToAdmin() {
+        navigate('/AdminLogin');
+    }
+
 
     return (
         <div className="container"> 
@@ -44,7 +48,7 @@ const Footer = () => {
                 <div className="Links" onClick={navigateToMental}>Mental Health</div>
                 <div className="Links" onClick={navigateToEmergency}>Emergency Contacts</div>
                 <div className="Links" onClick={navigateToDonation}>Donations</div>
-                <div className="Links">Admin Login</div>
+                <div className="Links" onClick={navigateToAdmin}>Admin Login</div>
             </div>
         </div>
     )
