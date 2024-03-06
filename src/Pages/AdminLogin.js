@@ -27,19 +27,20 @@ const AdminLogin = () => {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    username: loginInfo.adminID, // 'adminID' 대신 'username' 사용
-                    password: loginInfo.adminPassword // 'adminPassword' 대신 'password' 사용
+                    username: loginInfo.adminID,
+                    password: loginInfo.adminPassword
                 }),
             });
             if (response.ok) {
                 const data = await response.json();
-                console.log('로그인 성공:', data);
-                navigate('/Admin'); 
+                console.log('Login Complete:', data);
+                localStorage.setItem('token', data.token);
+                navigate('/Admin');
             } else {
-                console.error('로그인 실패');
+                console.error('Login Failed');
             }
         } catch (error) {
-            console.error('서버 에러:', error);
+            console.error('Server: Error:', error);
         }
     };
 
@@ -61,7 +62,7 @@ const AdminLogin = () => {
                     onChange={handleChange}
                     placeholder="Password"
                 />
-                <button type="submit">로그인</button>
+                <button type="submit">Login</button>
             </form>
             <Footer />
         </div>

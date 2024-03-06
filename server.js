@@ -47,6 +47,18 @@ app.post('/login', (req, res) => {
     });
 });
 
+app.get('/clients', (req, res) => {
+    const query = 'SELECT firstName, lastName, birthday FROM clients';
+    db.query(query, (error, results) => {
+        if (error) {
+            console.error("Error querying client data:", error);
+            res.status(500).send("Error querying client data");
+        } else {
+            res.status(200).json(results);
+        }
+    });
+});
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`);
