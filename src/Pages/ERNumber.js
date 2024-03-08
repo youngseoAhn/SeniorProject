@@ -83,11 +83,11 @@ const ERNumber = () => {
       <Header />
       <div className="er-content">
         <div className="intro">
-        <p>What Is the State of Homelessness ?</p>
+        <p className="introMargin">What Is the State of Homelessness ?</p>
         <TableauReport url="https://public.tableau.com/views/dataset2_17073842155310/Map?:language=en-US&:display_count=n&:origin=viz_share_link"/>
         </div>
         <div className="intro-midtext">
-          <p>For Immediate Emergencies, call 911. <br></br></p>
+          <p className="intro-midtext-margin">For Immediate Emergencies, call 911. <br></br></p>
           <p class="smaller">Otherwise, please call the number most relevant to your situation.</p>
         </div>
         <div className="er-sections">
@@ -97,6 +97,7 @@ const ERNumber = () => {
         </div>
         <TableauReport url="https://public.tableau.com/views/dataset3_17073846581140/pitBars?:language=en-US&:display_count=n&:origin=viz_share_link" />
         <TableauReport url="https://public.tableau.com/views/dataset1_17073819404780/RaceData?:language=en-US&:display_count=n&:origin=viz_share_link" />
+        <div className="marginMake"></div>
       </div>
       <Footer/>
     </div>

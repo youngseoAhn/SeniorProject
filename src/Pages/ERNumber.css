@@ -24,7 +24,7 @@ p.smaller {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px; /* Consistent space between sections */
-    
+    margin-bottom: 5%;
 }
 
 .er-section {
@@ -40,6 +40,11 @@ p.smaller {
     font-size: 60px;
     margin-bottom: 10px; /* Or any space you want between the paragraph and the grid */
     text-align: center;
+    margin-top: 4%;
+}
+
+.introMargin {
+    margin-bottom: 3%;
 }
 
 
@@ -48,8 +53,20 @@ p.smaller {
     margin-bottom: 10px; /* Or any space you want between the paragraph and the grid */
     text-align: center;
 
-  }
-  
+}
+
+.intro-midtext-margin {
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.smaller {
+    margin-bottom: 3%;
+}
+
+.marginMake {
+    margin-top: 5%;
+}
 
 /* Ensure this media query is in your ERNumber.css */
 @media (max-width: 768px) {

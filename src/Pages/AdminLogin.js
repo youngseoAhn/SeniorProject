@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import "./AdminLogin.css";
 
 const AdminLogin = () => {
     let navigate = useNavigate();
@@ -47,23 +48,30 @@ const AdminLogin = () => {
     return (
         <div>
             <Header />
-            <form className="AdminLogin" onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    name="adminID"
-                    value={loginInfo.adminID}
-                    onChange={handleChange}
-                    placeholder="Admin ID"
-                />
-                <input
-                    type="password"
-                    name="adminPassword"
-                    value={loginInfo.adminPassword}
-                    onChange={handleChange}
-                    placeholder="Password"
-                />
-                <button type="submit">Login</button>
-            </form>
+            <div className="loginContainer">
+                <p className="loginTitle">Admin Login</p>
+                <form className="AdminLogin" onSubmit={handleSubmit}>
+                    <input
+                        type="text"
+                        name="adminID"
+                        value={loginInfo.adminID}
+                        onChange={handleChange}
+                        placeholder="Admin ID"
+                        className="loginEnter"
+                    />
+                    <br/>
+                    <input
+                        type="password"
+                        name="adminPassword"
+                        value={loginInfo.adminPassword}
+                        onChange={handleChange}
+                        placeholder="Password"
+                        className="loginEnter"
+                    />
+                    <br/>
+                    <button type="submit" className="loginButton">Login</button>
+                </form>
+            </div>
             <Footer />
         </div>
     );

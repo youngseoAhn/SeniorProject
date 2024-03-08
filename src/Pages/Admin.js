@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import "./Admin.css";
 
 const Admin = () => {
     const [data, setData] = useState([]);
@@ -34,24 +35,26 @@ const Admin = () => {
     return(
         <div>        
             <Header/>
-            <table>
-                <thead>
-                    <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Birthday</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {data.map((item, index) => (
-                        <tr key={index}>
-                            <td>{item.firstName}</td>
-                            <td>{item.lastName}</td>
-                            <td>{formatDate(item.birthday)}</td>
+            <div className="TableContainer">
+              <table className="tableItself">
+                    <thead className="tabletTop">
+                        <tr>
+                            <th className="tableTopContent">First Name</th>
+                            <th className="tableTopContent">Last Name</th>
+                            <th className="tableTopContent">Birthday</th>
                         </tr>
-                    ))}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody className="tableBody">
+                        {data.map((item, index) => (
+                            <tr key={index} className="tableBodyContent">
+                                <td>{item.firstName}</td>
+                                <td>{item.lastName}</td>
+                                <td>{formatDate(item.birthday)}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
             <Footer/>
         </div>
     );

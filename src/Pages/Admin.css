@@ -1,0 +1,33 @@
+.tableItself {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    border-collapse: collapse;
+}
+
+.tabletTop{
+    background-color: #00989e;
+    border-radius: 3%;
+}
+
+.tableTopContent {
+    text-align: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    width: 200px;
+    height: 35px;
+    color: white;
+    font-size: 15px;
+}
+
+.tableBody {
+    background-color: white;   
+}
+
+.tableBodyContent {
+    text-align: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    width: 200px;
+    height: 35px;
+    font-size: 15px;
+}

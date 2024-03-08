@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../Components/Header";
+import Footer from "../Components/Footer";
 import "./Mental.css";
 
 const Mental = () => {
@@ -78,6 +79,7 @@ const Mental = () => {
                 <br></br><a href ='https://www.samhsa.gov/serious-mental-illness' class='MHlink'> <br></br>View SAMHSA's Public Message about Serious Mental Illnesses. </a>
             </p>
         </div></section>
+        <Footer/>
     </div></body>
     )
 } 
